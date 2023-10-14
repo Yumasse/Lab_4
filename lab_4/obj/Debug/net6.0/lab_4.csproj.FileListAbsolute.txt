@@ -1,0 +1,14 @@
+I:\Laborator\lab_4\lab_4\bin\Debug\net6.0\lab_4.exe
+I:\Laborator\lab_4\lab_4\bin\Debug\net6.0\lab_4.deps.json
+I:\Laborator\lab_4\lab_4\bin\Debug\net6.0\lab_4.runtimeconfig.json
+I:\Laborator\lab_4\lab_4\bin\Debug\net6.0\lab_4.dll
+I:\Laborator\lab_4\lab_4\bin\Debug\net6.0\lab_4.pdb
+I:\Laborator\lab_4\lab_4\obj\Debug\net6.0\lab_4.GeneratedMSBuildEditorConfig.editorconfig
+I:\Laborator\lab_4\lab_4\obj\Debug\net6.0\lab_4.AssemblyInfoInputs.cache
+I:\Laborator\lab_4\lab_4\obj\Debug\net6.0\lab_4.AssemblyInfo.cs
+I:\Laborator\lab_4\lab_4\obj\Debug\net6.0\lab_4.csproj.CoreCompileInputs.cache
+I:\Laborator\lab_4\lab_4\obj\Debug\net6.0\lab_4.dll
+I:\Laborator\lab_4\lab_4\obj\Debug\net6.0\refint\lab_4.dll
+I:\Laborator\lab_4\lab_4\obj\Debug\net6.0\lab_4.pdb
+I:\Laborator\lab_4\lab_4\obj\Debug\net6.0\lab_4.genruntimeconfig.cache
+I:\Laborator\lab_4\lab_4\obj\Debug\net6.0\ref\lab_4.dll
