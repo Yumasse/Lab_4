@@ -4,29 +4,31 @@
     {
         static void Main()
         {
-            var магазин = new Магазин();
+            var shop = new Shop();
 
-            var товар1 = new Товар("Ноутбук", 1000, "Потужний ноутбук", "Електроніка");
-            var товар2 = new Товар("Футболка", 20, "Зручна футболка", "Одяг");
-            магазин.ДодатиТовар(товар1);
-            магазин.ДодатиТовар(товар2);
+            var goods1 = new Goods("Ноутбук", 1000, "Потужний ноутбук", "Електроніка");
+            var goods2 = new Goods("Футболка", 20, "Зручна футболка", "Одяг");
+            shop.AddGoods(goods1);
+            shop.AddGoods(goods2);
 
-            var користувач = new Користувач("user1", "password1");
-            магазин.ДодатиКористувача(користувач);
+            var user = new User("user1", "password1");
+            shop.AddUser(user);
 
-            магазин.ЗробитиЗамовлення(користувач, new List<Товар> { товар1, товар2 }, 2);
+            shop.DoOrder(user, new List<Goods> { goods1, goods2 }, 2);
 
             Console.WriteLine("Історія покупок користувача:");
-            foreach (var замовлення in користувач.ІсторіяПокупок)
+
+            foreach (var order in user.Purchasehistory)
             {
-                Console.WriteLine($"Замовлення: Загальна вартість - {замовлення.ЗагальнаВартість}, Статус - {замовлення.Статус}");
+                Console.WriteLine($"Замовлення: Загальна вартість - {order.Sum}, Статус - {order.Status}");
             }
 
             Console.WriteLine("\nПошук товарів за критеріями:");
-            var результатиПошуку = магазин.Пошук(0, 50, "Одяг");
-            foreach (var товар in результатиПошуку)
+
+            var searchResults = shop.Search(0, 50, "Одяг");
+            foreach (var goods in searchResults)
             {
-                Console.WriteLine($"Товар: {товар.Назва}, Ціна - {товар.Ціна}, Категорія - {товар.Категорія}");
+                Console.WriteLine($"Товар: {goods.Name}, Ціна - {goods.Price}, Категорія - {goods.Category}");
             }
 
         }
